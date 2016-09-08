@@ -15,7 +15,6 @@ author:
 github: https://github.com/redpanthers
 
 paginate: 10
-comments: false
 paginate_path: "/page/:num"
 
 sass:
