@@ -141,6 +141,7 @@
     padding: 0;
     display: inline-block;
     text-decoration: none;
+    text-transform: none;
     color: darken($white-color, 25%);
     @include transition(color .2s linear);
   }
