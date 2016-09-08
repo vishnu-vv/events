@@ -1,8 +1,8 @@
 # Site settings
-title: Events @ Red Panthers
+title: Red Panthers, Events
 email: info@redpanthers.co
-description: Um lindo tema feito para jekyll e com o <3
-baseurl: "/"
+description: List of events organized, supported or sponsored by Red Panthers Kochi, India
+baseurl: ""
 url: "http://redpanthers.io/events"
 
 author:
