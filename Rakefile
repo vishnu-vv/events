@@ -13,7 +13,7 @@ comments: #{info[:comments]}
 ---
 "
 
-  filename = "#{info[:date]}-#{info[:section_id]}.md"
+  filename = "#{info[:date]}-#{info[:title].downcase.gsub(' ', '-')}.md"
   path = File.join('_posts', filename)
   File.open(path, 'w') { |f| f << text }
 end
