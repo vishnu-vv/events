@@ -14,7 +14,7 @@ author:
 
 github: https://github.com/redpanthers
 
-paginate: 10
+paginate: 7
 paginate_path: "/page/:num"
 
 sass:
