@@ -1,39 +1,34 @@
-require "rubygems"
-require "tmpdir"
+task :entry do
+  info = get_info(title: 'Title: (eg: KRUG Meetup)',
+                  date: 'Date: YYYY-MM-DD',
+                  categories: 'eg: Local Metetup/Hackathon/Open Source Saturday',
+                  comments: 'true/false')
 
-require "bundler/setup"
-require "jekyll"
+  text = "---
+layout: post
+title: #{info[:title]}
+date: #{info[:date]}
+categories: #{info[:categories]}
+comments: #{info[:comments]}
+---
+"
 
-# Change your GitHub reponame
-GITHUB_REPONAME = "nandomoreirame/zetsu"
-GITHUB_REPO_BRANCH = "gh-pages"
+  filename = "#{info[:date]}-#{info[:section_id]}.md"
+  path = File.join('_posts', filename)
+  File.open(path, 'w') { |f| f << text }
+end
 
-namespace :site do
-  desc "Generate blog files"
-  task :generate do
-    Jekyll::Site.new(Jekyll.configuration({
-      "source"      => ".",
-      "destination" => "_site"
-    })).process
-  end
+task :deploy do
+  `git push origin master`
+end
 
+def get_info(qns)
+  qns.map { |k, qn|
+    [k, ask("#{qn}: ")]
+  }.to_h
+end
 
-  desc "Generate and publish blog to gh-pages"
-  task :publish => [:generate] do
-    Dir.mktmpdir do |tmp|
-      cp_r "_site/.", tmp
-
-      pwd = Dir.pwd
-      Dir.chdir tmp
-
-      system "git init"
-      system "git add ."
-      message = "Site updated at #{Time.now.utc}"
-      system "git commit -m #{message.inspect}"
-      system "git remote add origin git@github.com:#{GITHUB_REPONAME}.git"
-      system "git push origin master:refs/heads/#{GITHUB_REPO_BRANCH} --force"
-
-      Dir.chdir pwd
-    end
-  end
+def ask(qn)
+  STDOUT.print qn
+  STDIN.gets.chomp
 end
