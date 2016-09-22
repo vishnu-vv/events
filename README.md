@@ -1,49 +1,26 @@
-# Zetsu
 
-> **Zetsu** - is a clean theme for Jekyll :smirk:
+# Red Panther-Events
 
-> :warning:
-  This theme requires ruby and rubygems installed
+This is an event log website, which keeps tracks of all the events we have been part of, either as a organizers/participants/sponsors. 
 
-* [x] Clean layout
-* [x] Resposive layout
-* [x] Preprocessor SASS
-* [x] CSS minified
-* [x] HTML minified
-* [x] Pagination
-* [x] Syntax highlight
-* [x] Author config
-* [x] Social links
-* [x] Share posts
-* [x] Comments with Disqus
+## Usage
+create new entry
 
----
+```sh
+bundle exec rake entry
+```
 
-### Start in 4 steps
+deploy
 
-1. Download or clone repo `git clone git@github.com:nandomoreirame/zetsu.git`
-2. Enter the folder: `cd zetsu/`
-3. Install Ruby gems: `bundle install`
-4. Start Jekyll server: `jekyll serve`
+```sh
+bundle exec rake deploy
+```
 
-Access, [localhost:4000/zetsu](http://localhost:4000/zetsu/)
+## ToDo
 
-### Deploy in Github pages in 2 steps
+[ ] Ask for event template when creating entry
+[ ] Add default template for Meetup
+[ ] Add default template for Open Source Saturday
+[ ] Add default template for Hackathon
 
-1. Change the variables `GITHUB_REPONAME` and `GITHUB_REPO_BRANCH` in `Rakefile`
-2. Run `rake site:publish` for build and publish on Github
 
-[Demo](https://nandomoreira.me/zetsu/)
-
-![Zetsu - free Jekyll theme](/screenshot.png)
-
----
-
-### Copyright and license
-
-It is under [the MIT license](/LICENSE).
-
-> :warning:
-  Please remove metas `<meta name="robots" content="noindex">` and `<meta name="googlebot" content="noindex">` in `_layouts/default.html`
-
-Enjoy :yum:
