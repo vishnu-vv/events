@@ -1,8 +1,8 @@
 task :entry do
   info = get_info(title: 'Title: (eg: KRUG Meetup)',
                   date: 'Date: YYYY-MM-DD',
-                  categories: 'eg: Local Metetup/Hackathon/Open Source Saturday',
-                  comments: 'true/false')
+                  categories: 'Categories: eg: Local Metetup/Hackathon/Open Source Saturday',
+                  comments: 'Comments: true/false')
 
   text = "---
 layout: post
