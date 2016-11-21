@@ -1,9 +1,9 @@
 # Site settings
-title: Red Panthers, Events
+title: Red Panthers - Events
 email: info@redpanthers.co
 description: List of events organized, supported or sponsored by Red Panthers Kochi, India
 baseurl: "/events"
-url: "http://redpanthers.io/events"
+url: "http://42.redpanthers.co/events"
 
 author:
   name     : 'Harisankar P S'
