@@ -18,12 +18,12 @@ bundle exec rake deploy
 
 ## ToDo
 
-[ ] Ask for event template when creating entry
+- [ ] Ask for event template when creating entry
 
-[ ] Add default template for Meetup
+- [ ] Add default template for Meetup
 
-[ ] Add default template for Open Source Saturday
+- [ ] Add default template for Open Source Saturday
 
-[ ] Add default template for Hackathon
+- [ ] Add default template for Hackathon
 
 
