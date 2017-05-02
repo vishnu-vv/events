@@ -9,7 +9,7 @@ comments: true
 
 Hello Guys,
 
-We, The Red Panthers are hosting Open Source Saturday on May 6th, 2017. The idea is to spend the entire day contributing and discussing about open source projects. Food, Internet, Drinks & Swags are on us. Since we are arranging for the food (including lunch) and drinks, we require you to RSVP for the event, by clicking on the meetup link. Come, join us!
+We, the Red Panthers are hosting Open Source Saturday on May 6th, 2017. The idea is to spend the entire day contributing and discussing about open source projects. Food, Internet, Drinks & Swags are on us. Since we are arranging for the food (including lunch) and drinks, we require you to RSVP for the event, by clicking on the meetup link. Come, join us!
 
 
 Agenda
